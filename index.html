@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+var options = {
+	data: [{
+			type: "pie",
+			startAngle: 45,
+			showInLegend: "true",
+			legendText: "{label}",
+			indexLabel: "{label} ({y})",
+			yValueFormatString:"#,##0.#"%"",
+			dataPoints: [
+				{ label: "Male", y: 60 },
+				{ label: "Female", y: 40 },	
+			]
+	}]
+};
+$("#chartContainer").CanvasJSChart(options);
+}
+</script>
+
+</head>
+<body>
+<div class="containerUserList">
+	<button id="mybtn">Show chart</button>
+   				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<span class="closeModal">&times;</span>
+							<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+								<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
+								<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+					</div>
+				</div>
+	<form class="search">
+   		<p>
+   			<input type="text" placeholder="Enter first name" class="search__input" onkeyup="filter(this)"> 
+   		</p>
+  </form>
+  
+	<div class="__header">
+		<div class="header__text">
+		<h3>Last</h3>
+		<h3>First</h3>
+		<h3>Username</h3>
+		<h3>Phone</h3>
+		<h3>Location</h3>
+	</div>
+	</div>
+
+	<ul id="users"></ul>
+	<script src="main.js"></script>
+</div>
+
+<script type="text/javascript"></script>
+
+</body>
+</html>

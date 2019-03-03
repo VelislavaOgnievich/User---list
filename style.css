@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.containerUserList{
+  background-color: #e6e5e5;
+}
+.__header{
+  background-color: #aaa6a6;
+  margin-left: 40px;
+  margin-right: 30px;
+  height: 80px;
+
+}
+.header__text{
+  display: flex;
+  
+}
+.__header h3{
+  width: 63px;
+    margin-left: 184px;
+}
+.search{
+  display: flex;
+  justify-content: center;
+}
+.search__input{
+  width: 300px;
+  height: 25px;
+}
+button{
+  margin-left: 711px;
+  margin-top: 20px;
+}
+.modal{
+display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .modal-content {
+    margin: 5% auto;
+    padding: 54px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 450px;
+  }
+  .closeModal{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#users{
+  margin-top: 0;
+}
+#users .users__item{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+#users .users__item:after {
+  content: '\02795'; 
+  font-size: 16px;
+  color: #777;
+  margin-right: 10px;
+}
+.users__item p{
+  padding: 0;
+  margin-right: 100px;
+  width: 150px;
+}
+.users__item img{
+  margin: 5px 100px 5px 5px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+li:nth-of-type(2n){
+  background-color: #aaa6a6;
+}
+#users .close{
+  display: none;
+}
+#users .open{
+  display: block;
+}
+#users .user__info{
+  height: 95px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid gray;
+  margin-right: 30px;
+}
+.user__info.open .users__item:after{
+  content: "\2796"; 
+  font-size: 13px;
+  color: #777;
+  margin-right: 10px;
+}
+
